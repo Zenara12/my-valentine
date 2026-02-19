@@ -1,4 +1,4 @@
-import teddyLocal from './assets/images/teddy.svg'
+import teddyLocal from './assets/images/teddy.png'
 
 export const MESSAGES = [
   "Are you sure?",
