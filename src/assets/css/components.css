@@ -1,0 +1,251 @@
+/* ============================================================
+   Component Styles — Valentine's Day Invite
+   ============================================================ */
+
+/* ---------- Layout ---------- */
+.app-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-bg-light);
+  overflow-x: hidden;
+}
+
+/* ---------- Header ---------- */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-md) var(--space-sm);
+}
+
+.app-header__icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.app-header__title {
+  flex: 1;
+  text-align: center;
+  padding-right: 3rem;       /* balance the icon width */
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-primary-80);
+}
+
+/* ---------- Main / invite screen ---------- */
+.app-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  text-align: center;
+  gap: var(--space-xl);
+}
+
+/* ---------- Hero circle ---------- */
+.hero-circle {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  aspect-ratio: 1;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-10);
+  border: 4px solid white;
+  box-shadow: var(--shadow-hero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-circle__image {
+  width: 80%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-full);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-circle__badge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  padding: 1rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Text section ---------- */
+.invite-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 28rem;
+}
+
+.invite-text__question {
+  font-size: var(--font-size-hero);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  min-height: 6.25rem;
+  transition: var(--transition-base);
+}
+
+.invite-text__sub {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 0 var(--space-md);
+  color: var(--color-text-muted);
+}
+
+/* ---------- Buttons ---------- */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 100%;
+  max-width: 22rem;
+  padding-top: var(--space-md);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .btn-group { flex-direction: row; }
+}
+
+.btn-yes {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 2rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  box-shadow: var(--shadow-btn-yes);
+  transition: var(--transition-base);
+  z-index: 10;
+}
+
+.btn-yes:hover  { filter: brightness(1.1); }
+.btn-yes:active { transform: scale(0.95); }
+
+.btn-no {
+  width: 100%;
+  flex: 1;
+  padding: 1.25rem 2rem;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border-subtle);
+  background-color: var(--color-bg-card);
+  color: var(--color-primary-60);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  transition: var(--transition-base);
+  z-index: 0;
+}
+
+.btn-no:hover { background-color: var(--color-primary-10); }
+
+/* ---------- Celebration screen ---------- */
+.celebration {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-2xl);
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
+
+.celebration__bg-hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.celebration__bg-hearts span {
+  position: absolute;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.celebration__avatar {
+  width: 16rem;
+  aspect-ratio: 1;
+  border-radius: var(--radius-full);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 8px solid var(--color-border-white);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  margin-bottom: var(--space-xl);
+}
+
+.celebration__icon {
+  font-size: 5rem !important;
+  color: white;
+  margin-bottom: var(--space-sm);
+}
+
+.celebration__title {
+  color: white;
+  font-size: var(--font-size-display);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+  padding: 0 var(--space-md);
+}
+
+.celebration__subtitle {
+  color: rgba(255,255,255,0.9);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  max-width: 18rem;
+  padding: 0 var(--space-md);
+}
+
+.btn-reset {
+  margin-top: 3rem;
+  background-color: white;
+  color: var(--color-primary);
+  padding: 1.25rem 2.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  transition: var(--transition-fast);
+}
+
+.btn-reset:hover  { transform: scale(1.05); }
+.btn-reset:active { transform: scale(0.95); }

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="#fce4ec"/>
+
+  <!-- Ears -->
+  <circle cx="45"  cy="55"  r="24" fill="#d4956a"/>
+  <circle cx="155" cy="55"  r="24" fill="#d4956a"/>
+  <circle cx="45"  cy="55"  r="14" fill="#e8b491"/>
+  <circle cx="155" cy="55"  r="14" fill="#e8b491"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="90" r="54" fill="#d4956a"/>
+
+  <!-- Face shading -->
+  <ellipse cx="100" cy="108" rx="32" ry="22" fill="#e8b491"/>
+
+  <!-- Eyes -->
+  <circle cx="84"  cy="80" r="8" fill="#3e2723"/>
+  <circle cx="116" cy="80" r="8" fill="#3e2723"/>
+  <circle cx="87"  cy="77" r="2.5" fill="white"/>
+  <circle cx="119" cy="77" r="2.5" fill="white"/>
+
+  <!-- Nose -->
+  <ellipse cx="100" cy="98" rx="9" ry="6" fill="#3e2723"/>
+
+  <!-- Mouth -->
+  <path d="M91 106 Q100 116 109 106" stroke="#3e2723" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="162" rx="42" ry="38" fill="#d4956a"/>
+
+  <!-- Belly -->
+  <ellipse cx="100" cy="165" rx="26" ry="22" fill="#e8b491"/>
+
+  <!-- Arms -->
+  <ellipse cx="57"  cy="150" rx="16" ry="26" fill="#d4956a" transform="rotate(-20 57 150)"/>
+  <ellipse cx="143" cy="150" rx="16" ry="26" fill="#d4956a" transform="rotate(20 143 150)"/>
+
+  <!-- Heart on belly -->
+  <path d="M100 169 C100 169 91 161 91 155 C91 151 95 148 100 153 C105 148 109 151 109 155 C109 161 100 169 100 169Z" fill="#e84393" opacity="0.8"/>
+
+  <!-- Legs -->
+  <ellipse cx="82"  cy="194" rx="16" ry="12" fill="#d4956a"/>
+  <ellipse cx="118" cy="194" rx="16" ry="12" fill="#d4956a"/>
+</svg>
