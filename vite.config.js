@@ -1,4 +1,4 @@
-import { fileURLToPath, URL } from 'node:url'
+import path from 'path';
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -10,9 +10,15 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  // root: 'src',
+  build: {
+    outDir: '../dist', // Output to 'dist' directory outside of 'src'
+    emptyOutDir: true, // Clears the output directory before build
+  },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      // Optional: You can also set up an alias for '@' to point to 'src'
+      '@': path.resolve(__dirname, './src'),
     },
   },
 })

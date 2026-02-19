@@ -1,0 +1,64 @@
+/* ============================================================
+   Animations — Valentine's Day Invite
+   ============================================================ */
+
+/* ------ Floating (hero bear) ------ */
+@keyframes floating {
+  0%,  100% { transform: translateY(0px);   }
+  50%        { transform: translateY(-14px); }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* ------ Fade in (celebration screen) ------ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1);    }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* ------ Heart pulse ------ */
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1);    }
+  50%       { transform: scale(1.15); }
+}
+
+.heart-pulse {
+  animation: heartPulse 1.2s ease-in-out infinite;
+}
+
+/* ------ Bounce (celebration hearts) ------ */
+@keyframes bounceSlow {
+  0%,  100% { transform: translateY(0)    rotate(0deg);   }
+  25%        { transform: translateY(-18px) rotate(-6deg);  }
+  75%        { transform: translateY(-8px)  rotate(4deg);   }
+}
+
+.bounce-slow { animation: bounceSlow 2.4s ease-in-out infinite; }
+
+/* ------ Drift (background hearts, staggered) ------ */
+@keyframes drift {
+  0%        { transform: translateY(0)     rotate(0deg);  opacity: 0.6; }
+  50%       { transform: translateY(-24px) rotate(10deg); opacity: 1;   }
+  100%      { transform: translateY(0)     rotate(0deg);  opacity: 0.6; }
+}
+
+.drift-1 { animation: drift 3.0s ease-in-out infinite; }
+.drift-2 { animation: drift 3.8s ease-in-out infinite 0.4s; }
+.drift-3 { animation: drift 2.6s ease-in-out infinite 0.8s; }
+.drift-4 { animation: drift 4.2s ease-in-out infinite 1.2s; }
+.drift-5 { animation: drift 3.4s ease-in-out infinite 1.6s; }
+
+/* ------ Button press ------ */
+@keyframes btnPress {
+  0%   { transform: scale(1);    }
+  40%  { transform: scale(0.94); }
+  100% { transform: scale(1);    }
+}
+
+.btn-press:active { animation: btnPress 0.18s ease forwards; }

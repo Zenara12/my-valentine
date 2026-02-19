@@ -1,0 +1,68 @@
+/* ============================================================
+   Design Tokens — Valentine's Day Invite
+   ============================================================ */
+
+:root {
+  /* Brand */
+  --color-primary:          #e84393;
+  --color-primary-light:    #f472b6;
+  --color-primary-dark:     #be185d;
+  --color-primary-10:       rgba(232, 67, 147, 0.10);
+  --color-primary-20:       rgba(232, 67, 147, 0.20);
+  --color-primary-40:       rgba(232, 67, 147, 0.40);
+  --color-primary-60:       rgba(232, 67, 147, 0.60);
+  --color-primary-80:       rgba(232, 67, 147, 0.80);
+
+  /* Backgrounds */
+  --color-bg-light:         #fff5f8;
+  --color-bg-dark:          #1a0010;
+  --color-bg-card:          rgba(255, 255, 255, 0.50);
+
+  /* Text */
+  --color-text-on-primary:  #ffffff;
+  --color-text-muted:       rgba(232, 67, 147, 0.60);
+
+  /* Borders */
+  --color-border-subtle:    rgba(232, 67, 147, 0.20);
+  --color-border-white:     rgba(255, 255, 255, 0.30);
+
+  /* Spacing */
+  --space-xs:   0.25rem;
+  --space-sm:   0.5rem;
+  --space-md:   1rem;
+  --space-lg:   1.5rem;
+  --space-xl:   2rem;
+  --space-2xl:  3rem;
+
+  /* Radii */
+  --radius-full:    9999px;
+  --radius-lg:      1.5rem;
+
+  /* Shadows */
+  --shadow-hero:    0 20px 60px rgba(232, 67, 147, 0.15);
+  --shadow-btn-yes: 0 20px 40px rgba(232, 67, 147, 0.40);
+  --shadow-card:    0 8px  32px rgba(232, 67, 147, 0.10);
+
+  /* Transitions */
+  --transition-base:  all 0.3s ease;
+  --transition-fast:  all 0.15s ease;
+
+  /* Typography */
+  --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-sm:     0.875rem;
+  --font-size-base:   1rem;
+  --font-size-lg:     1.125rem;
+  --font-size-xl:     1.25rem;
+  --font-size-2xl:    1.5rem;
+  --font-size-hero:   2.625rem; /* 42px */
+  --font-size-display:3rem;     /* 48px */
+}
+
+/* Dark-mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-light:  #1a0010;
+    --color-bg-card:   rgba(255, 255, 255, 0.08);
+    --color-border-white: rgba(232, 67, 147, 0.20);
+  }
+}

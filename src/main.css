@@ -1,0 +1,7 @@
+/* ============================================================
+   Main stylesheet — imports all CSS from assets/css
+   ============================================================ */
+@import '@/assets/css/variables.css';
+@import '@/assets/css/base.css';
+@import '@/assets/css/animations.css';
+@import '@/assets/css/components.css';
