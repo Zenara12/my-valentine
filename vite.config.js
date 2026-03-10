@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/my-valentine/',
+  base: '/',
   resolve: {
     alias: {
       // Optional: You can also set up an alias for '@' to point to 'src'
